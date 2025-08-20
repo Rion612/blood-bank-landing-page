@@ -97,8 +97,13 @@ body{
 .steps p{margin:0;color:var(--muted)}
 
 /* Eligibility */
-.eligibility{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.eligibility ul{margin:0;padding-left:18px}
+.eligibility{display:block}
+.eligibility__col{min-width:0}
+.eligibility ul{margin:0;padding-left:18px;overflow-wrap:anywhere;word-break:break-word}
+.eligibility__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0}
+.eligibility__card{display:flex;align-items:flex-start;gap:10px}
+.eligibility__card .icon{width:30px;height:30px;margin:2px 0 6px}
+.eligibility__card p{margin:2px 0 0;color:var(--text);font-weight:600}
 .note{color:var(--muted);margin-top:10px}
 
 /* Camps */
@@ -144,7 +149,7 @@ input:focus,select:focus{border-color:var(--brand-500);box-shadow:0 0 0 3px var(
   .nav{display:none}
   .grid-4,.grid-3{grid-template-columns:1fr}
   .gallery__grid{grid-template-columns:1fr}
-  .form__row,.eligibility{grid-template-columns:1fr}
+  .form__row,.eligibility__grid{grid-template-columns:1fr}
   .header__inner{gap:10px}
   .hero{padding-top:34px}
   .footer__inner{grid-template-columns:1fr}

@@ -58,6 +58,7 @@
           <span class="brand__name">Lifeline</span>
         </a>
         <nav class="nav" aria-label="Primary">
+          <a href="#about">About us</a>
           <a href="#why">Why donate</a>
           <a href="#how">How it works</a>
           <a href="#eligibility">Eligibility</a>
@@ -88,15 +89,15 @@
           </div>
           <div class="hero__stats" role="list">
             <div class="stat" role="listitem">
-              <div class="stat__num">25k+</div>
+              <div class="stat__num">25+</div>
               <div class="stat__label">Registered donors</div>
             </div>
             <div class="stat" role="listitem">
-              <div class="stat__num">60k+</div>
+              <div class="stat__num">60+</div>
               <div class="stat__label">Lives impacted</div>
             </div>
             <div class="stat" role="listitem">
-              <div class="stat__num">120+</div>
+              <div class="stat__num">10+</div>
               <div class="stat__label">Monthly camps</div>
             </div>
           </div>
@@ -263,24 +264,92 @@
       </div>
     </section>
 
+    <!-- About us -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About us</h2>
+        <p>
+          We are a non‑profit charity organization that connects voluntary donors
+          with patients in need, helping people donate blood free of cost.
+        </p>
+        <p>
+          Founded as <strong>Lifeline</strong>, we’re known in regional areas of Bangladesh as
+          <strong>রক্তবন্ধু</strong> (Rokto Bondhu). Our community currently includes about
+          <strong>35 members</strong> across different blood groups — and you can join too.
+        </p>
+        <div class="about__actions">
+          <a class="btn btn--secondary" href="#register">Join as a donor</a>
+          <a class="btn btn--ghost" href="#camps">Find a camp</a>
+        </div>
+      </div>
+    </section>
+
     <!-- Eligibility -->
     <section id="eligibility" class="section">
       <div class="container">
         <h2>Eligibility</h2>
         <div class="eligibility">
-          <ul>
-            <li>Age 18–65 years</li>
-            <li>Weight ≥ 50 kg (110 lb)</li>
-            <li>Hemoglobin within normal range</li>
-            <li>No donation in the last 56 days</li>
-            <li>Free from cold, flu, or infections</li>
-          </ul>
-          <ul>
-            <li>Not pregnant or recently delivered</li>
-            <li>No recent tattoos/piercings (last 6 months)</li>
-            <li>Not under antibiotic treatment</li>
-            <li>Well hydrated and rested</li>
-            <li>Bring photo ID</li>
+          <ul class="eligibility__grid" role="list" aria-label="Eligibility criteria">
+            <li class="card eligibility__card" role="listitem">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </div>
+              <p>Age 18–65 years</p>
+            </li>
+            <li class="card eligibility__card" role="listitem">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </div>
+              <p>Weight ≥ 50 kg (110 lb)</p>
+            </li>
+            <li class="card eligibility__card" role="listitem">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </div>
+              <p>Hemoglobin within normal range</p>
+            </li>
+            <li class="card eligibility__card" role="listitem">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </div>
+              <p>No donation in the last 56 days</p>
+            </li>
+            <li class="card eligibility__card" role="listitem">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </div>
+              <p>Free from cold, flu, or infections</p>
+            </li>
+            <li class="card eligibility__card" role="listitem">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </div>
+              <p>Not pregnant or recently delivered</p>
+            </li>
+            <li class="card eligibility__card" role="listitem">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </div>
+              <p>No recent tattoos/piercings (last 6 months)</p>
+            </li>
+            <li class="card eligibility__card" role="listitem">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </div>
+              <p>Not under antibiotic treatment</p>
+            </li>
+            <li class="card eligibility__card" role="listitem">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </div>
+              <p>Well hydrated and rested</p>
+            </li>
+            <li class="card eligibility__card" role="listitem">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </div>
+              <p>Bring photo ID</p>
+            </li>
           </ul>
         </div>
         <p class="note">
@@ -518,6 +587,7 @@
           <p class="muted">Donate blood. Share life.</p>
         </div>
         <div class="footer__links">
+          <a href="#about">About us</a>
           <a href="#why">Why donate</a>
           <a href="#how">How it works</a>
           <a href="#eligibility">Eligibility</a>
