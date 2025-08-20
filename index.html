@@ -464,12 +464,12 @@
       <div class="container">
         <h2>Become a donor</h2>
         <form
+          name="donor-registration"
           class="form"
-          action="#"
-          method="post"
-          onsubmit="return false"
-          novalidate
+          netlify
         >
+          <!-- Netlify form requirements -->
+          <input type="hidden" name="form-name" value="donor-registration" />
           <div class="form__row">
             <label>
               Full name
@@ -491,7 +491,7 @@
               <input
                 type="tel"
                 name="phone"
-                placeholder="+1 555 0123"
+                placeholder="+88017********"
                 required
               />
             </label>
@@ -521,7 +521,7 @@
             </label>
           </div>
           <label class="checkbox">
-            <input type="checkbox" required /> I agree to be contacted about
+            <input type="checkbox" name="consent" required /> I agree to be contacted about
             blood drives and understand this is not a medical diagnosis.
           </label>
           <div class="form__actions">
