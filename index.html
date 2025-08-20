@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lifeline Blood Bank — Donate Blood, Save Lives</title>
+    <meta
+      name="description"
+      content="Join Lifeline Blood Bank. Donate blood and save lives. Find camps, check eligibility, and register as a donor."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top notice bar -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <span class="topbar__msg">Urgent need for O- donors in your area.</span>
+        <a href="#register" class="btn btn--sm btn--light">Volunteer now</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#home" aria-label="Lifeline Blood Bank home">
+          <!-- Inline SVG logo generated here -->
+          <svg
+            class="brand__logo"
+            width="36"
+            height="36"
+            viewBox="0 0 64 64"
+            fill="none"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ff4d4f" />
+                <stop offset="100%" stop-color="#c81e1e" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M32 6c6 12 20 22 20 34a20 20 0 1 1-40 0c0-12 14-22 20-34Z"
+              fill="url(#g1)"
+            />
+            <path
+              d="M21 38c0 6 5 11 11 11s11-5 11-11"
+              stroke="#ffffff"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span class="brand__name">Lifeline</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#why">Why donate</a>
+          <a href="#how">How it works</a>
+          <a href="#eligibility">Eligibility</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#camps">Camps</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="header__cta">
+          <a class="btn btn--primary" href="#register">Donate now</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1>Donate blood. Save lives.</h1>
+          <p>
+            Every donation can help up to three patients. Join thousands of
+            lifesavers and make a difference today.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#register"
+              >Become a donor</a
+            >
+            <a class="btn btn--ghost btn--lg" href="#why">Learn more</a>
+          </div>
+          <div class="hero__stats" role="list">
+            <div class="stat" role="listitem">
+              <div class="stat__num">25k+</div>
+              <div class="stat__label">Registered donors</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat__num">60k+</div>
+              <div class="stat__label">Lives impacted</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat__num">120+</div>
+              <div class="stat__label">Monthly camps</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <!-- SVG hero artwork generated here -->
+          <svg
+            viewBox="0 0 520 460"
+            class="hero__svg"
+            role="img"
+            aria-label="Illustration of heart and blood drop"
+          >
+            <defs>
+              <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ff5a5f" />
+                <stop offset="100%" stop-color="#c81e1e" />
+              </linearGradient>
+              <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+              </linearGradient>
+              <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="18" />
+              </filter>
+            </defs>
+            <!-- Background blobs -->
+            <g>
+              <circle cx="420" cy="60" r="70" fill="#ffe4e6" />
+              <circle cx="70" cy="120" r="60" fill="#fee2e2" />
+              <circle cx="500" cy="300" r="90" fill="#fee2e2" />
+            </g>
+            <!-- Heart -->
+            <g transform="translate(100,90)">
+              <path
+                d="M160 60c-22-58-120-58-120 18 0 78 120 140 120 140s120-62 120-140c0-76-98-76-120-18Z"
+                fill="url(#heroGrad)"
+              />
+              <path
+                d="M110 65c-10-12-45-10-52 20"
+                stroke="#fff"
+                stroke-opacity="0.9"
+                stroke-width="10"
+                stroke-linecap="round"
+              />
+            </g>
+            <!-- Drop with shine -->
+            <g transform="translate(320,210)">
+              <path
+                d="M70 0c9 18 36 40 36 75a36 36 0 1 1-72 0C34 40 61 18 70 0Z"
+                fill="url(#heroGrad)"
+              />
+              <ellipse cx="58" cy="45" rx="12" ry="20" fill="url(#shine)" />
+            </g>
+            <!-- Soft glow -->
+            <circle
+              cx="260"
+              cy="220"
+              r="140"
+              fill="#fecaca"
+              opacity="0.35"
+              filter="url(#soft)"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why donate -->
+    <section id="why" class="section">
+      <div class="container">
+        <h2>Why donate blood?</h2>
+        <div class="grid grid-4">
+          <div class="card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 21s-7-4.35-7-10a7 7 0 0 1 14 0c0 5.65-7 10-7 10Zm0-9.25a2.75 2.75 0 1 0 0-5.5 2.75 2.75 0 0 0 0 5.5Z"
+                />
+              </svg>
+            </div>
+            <h3>Save lives</h3>
+            <p>
+              One donation can help up to three people in need of blood
+              components.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 8V2l8 4v6a8 8 0 1 1-16 0V6l8-4v6Z"
+                />
+              </svg>
+            </div>
+            <h3>Fast & safe</h3>
+            <p>
+              Professional staff, sterile equipment, and a process under 30
+              minutes.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 2a7 7 0 0 0-7 7v2H3v9h18v-9h-2V9a7 7 0 0 0-7-7Zm0 2a5 5 0 0 1 5 5v2H7V9a5 5 0 0 1 5-5Z"
+                />
+              </svg>
+            </div>
+            <h3>Community impact</h3>
+            <p>
+              Support local hospitals and clinics with a stable blood supply.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 22a10 10 0 1 1 10-10 10.012 10.012 0 0 1-10 10Zm1-10h5v2h-7V6h2v6Z"
+                />
+              </svg>
+            </div>
+            <h3>It takes minutes</h3>
+            <p>
+              A small act of kindness with a huge effect, done on your schedule.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="section section--alt">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li>
+            <span class="step__num">1</span>
+            <h3>Register</h3>
+            <p>Tell us a few details and choose your nearest center or camp.</p>
+          </li>
+          <li>
+            <span class="step__num">2</span>
+            <h3>Quick screening</h3>
+            <p>A brief health check ensures you're good to donate today.</p>
+          </li>
+          <li>
+            <span class="step__num">3</span>
+            <h3>Donate</h3>
+            <p>
+              Give blood safely with our trained staff. The draw takes ~10
+              minutes.
+            </p>
+          </li>
+          <li>
+            <span class="step__num">4</span>
+            <h3>Refresh & relax</h3>
+            <p>Enjoy snacks, rest a bit, and leave with a hero's smile.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Eligibility -->
+    <section id="eligibility" class="section">
+      <div class="container">
+        <h2>Eligibility</h2>
+        <div class="eligibility">
+          <ul>
+            <li>Age 18–65 years</li>
+            <li>Weight ≥ 50 kg (110 lb)</li>
+            <li>Hemoglobin within normal range</li>
+            <li>No donation in the last 56 days</li>
+            <li>Free from cold, flu, or infections</li>
+          </ul>
+          <ul>
+            <li>Not pregnant or recently delivered</li>
+            <li>No recent tattoos/piercings (last 6 months)</li>
+            <li>Not under antibiotic treatment</li>
+            <li>Well hydrated and rested</li>
+            <li>Bring photo ID</li>
+          </ul>
+        </div>
+        <p class="note">
+          These are general guidelines. Final eligibility is determined by
+          on-site medical staff.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Campaign gallery</h2>
+        <div class="gallery__grid">
+          <figure class="gallery__card">
+            <img
+              src="images/blood-donate-01.jpg"
+              alt="Donor giving blood at community drive"
+              loading="lazy"
+            />
+            <figcaption>Community drive</figcaption>
+          </figure>
+          <figure class="gallery__card">
+            <img
+              src="images/blood-donate-02.jpg"
+              alt="Nurse preparing equipment for blood donation"
+              loading="lazy"
+            />
+            <figcaption>Prepared and safe</figcaption>
+          </figure>
+          <figure class="gallery__card">
+            <img
+              src="images/blood-donate-03.jpg"
+              alt="Volunteer registering donors"
+              loading="lazy"
+            />
+            <figcaption>Volunteers at work</figcaption>
+          </figure>
+          <figure class="gallery__card">
+            <img
+              src="images/blood-donate-04.jpg"
+              alt="Donor relaxing after donating blood"
+              loading="lazy"
+            />
+            <figcaption>Refresh & relax</figcaption>
+          </figure>
+          <figure class="gallery__card">
+            <img
+              src="images/blood-donate-05.jpg"
+              alt="Blood donation kit and supplies"
+              loading="lazy"
+            />
+            <figcaption>Sterile equipment</figcaption>
+          </figure>
+          <figure class="gallery__card">
+            <img
+              src="images/blood-donate-06.jpg"
+              alt="Group photo from blood donation camp"
+              loading="lazy"
+            />
+            <figcaption>Together we save</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Camps -->
+    <section id="camps" class="section section--alt">
+      <div class="container">
+        <h2>Upcoming donation camps</h2>
+        <div class="grid grid-3">
+          <article class="camp">
+            <h3>City Hall Drive</h3>
+            <p class="camp__meta">Aug 28 · 10:00–16:00 · Downtown</p>
+            <p>Walk-ins welcome. Free parking available.</p>
+            <a href="#register" class="btn btn--secondary btn--sm"
+              >Reserve a slot</a
+            >
+          </article>
+          <article class="camp">
+            <h3>Tech Park Clinic</h3>
+            <p class="camp__meta">Sep 2 · 09:00–15:00 · North Campus</p>
+            <p>Priority line for first-time donors.</p>
+            <a href="#register" class="btn btn--secondary btn--sm"
+              >Reserve a slot</a
+            >
+          </article>
+          <article class="camp">
+            <h3>Community Center</h3>
+            <p class="camp__meta">Sep 10 · 11:00–17:00 · West End</p>
+            <p>Snacks and refreshments provided.</p>
+            <a href="#register" class="btn btn--secondary btn--sm"
+              >Reserve a slot</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration form -->
+    <section id="register" class="section">
+      <div class="container">
+        <h2>Become a donor</h2>
+        <form
+          class="form"
+          action="#"
+          method="post"
+          onsubmit="return false"
+          novalidate
+        >
+          <div class="form__row">
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Jane Doe" required />
+            </label>
+            <label>
+              Email
+              <input
+                type="email"
+                name="email"
+                placeholder="jane@example.com"
+                required
+              />
+            </label>
+          </div>
+          <div class="form__row">
+            <label>
+              Phone
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+1 555 0123"
+                required
+              />
+            </label>
+            <label>
+              City
+              <input type="text" name="city" placeholder="Your city" />
+            </label>
+          </div>
+          <div class="form__row">
+            <label>
+              Blood group
+              <select name="blood" required>
+                <option value="">Select</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+              </select>
+            </label>
+            <label>
+              Last donation
+              <input type="date" name="last_donation" />
+            </label>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" required /> I agree to be contacted about
+            blood drives and understand this is not a medical diagnosis.
+          </label>
+          <div class="form__actions">
+            <button class="btn btn--primary btn--lg" type="submit">
+              Submit registration
+            </button>
+            <p class="form__hint">
+              We’ll reach out with your nearest donation opportunity.
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <h2>Frequently asked questions</h2>
+        <details>
+          <summary>How often can I donate?</summary>
+          <p>
+            Whole blood: every 56 days. Platelets and plasma may have different
+            intervals.
+          </p>
+        </details>
+        <details>
+          <summary>Is it safe?</summary>
+          <p>
+            Yes. We use sterile, single-use equipment and trained staff for
+            every donation.
+          </p>
+        </details>
+        <details>
+          <summary>What should I do before donating?</summary>
+          <p>
+            Eat a healthy meal, drink water, and bring a photo ID. Avoid
+            strenuous exercise right after donating.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <svg
+            class="brand__logo"
+            width="28"
+            height="28"
+            viewBox="0 0 64 64"
+            fill="none"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ff4d4f" />
+                <stop offset="100%" stop-color="#c81e1e" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M32 6c6 12 20 22 20 34a20 20 0 1 1-40 0c0-12 14-22 20-34Z"
+              fill="url(#g2)"
+            />
+            <path
+              d="M21 38c0 6 5 11 11 11s11-5 11-11"
+              stroke="#ffffff"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span class="brand__name">Lifeline</span>
+          <p class="muted">Donate blood. Share life.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#why">Why donate</a>
+          <a href="#how">How it works</a>
+          <a href="#eligibility">Eligibility</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#register">Register</a>
+        </div>
+        <div class="footer__copy">
+          © <span id="year">2025</span> Lifeline Blood Bank
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Set footer year without external JS frameworks.
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
